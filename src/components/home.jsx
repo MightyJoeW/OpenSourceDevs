@@ -1,12 +1,11 @@
-import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import DevCard from '../dev-card/dev-card';
-import { profiles } from '../dev-grid-utils';
+import DevCard from './dev-card';
+import { profiles } from './dev-grid-utils';
 
-const DevGrid = () => {
+const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1, margin: 3 }}>
+    <Box sx={{ flexGrow: 1, margin: '3em' }}>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
@@ -22,4 +21,4 @@ const DevGrid = () => {
   );
 };
 
-export default DevGrid;
+export default Home;
