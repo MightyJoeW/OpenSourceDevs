@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -35,19 +36,19 @@ const Help = () => {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <a href='#how-to-create-a-github-account'>
+            <Link href='#how-to-create-a-github-account'>
               How to create a GitHub account
-            </a>
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <a href='#finding-an-open-source-project'>
+            <Link href='#finding-an-open-source-project'>
               Finding an open source project
-            </a>
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <a href='#how-to-submit-contributions'>
+            <Link href='#how-to-submit-contributions'>
               How to submit contributions
-            </a>
+            </Link>
           </MenuItem>
         </Menu>
       </div>

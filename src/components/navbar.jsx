@@ -21,11 +21,6 @@ export default function Navbar() {
             </Link>
           </Typography>
           <Button color='inherit'>
-            <Link to='help' style={navLinkStyle}>
-              Help
-            </Link>
-          </Button>
-          <Button color='inherit'>
             <Link to='about' style={navLinkStyle}>
               About
             </Link>

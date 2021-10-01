@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import HelpIcon from '@mui/icons-material/Help';
 
 export default function Footer() {
   const date = new Date();
@@ -20,6 +21,15 @@ export default function Footer() {
         <Toolbar>
           <p>© Copyright {year} | Open Source Allstars</p>
           <Box sx={{ flexGrow: 1 }} />
+          <IconButton color='inherit'>
+            <a
+              href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide-for-2021'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <HelpIcon />
+            </a>
+          </IconButton>
           <IconButton color='inherit'>
             <a
               href='https://github.com/MightyJoeW/OpenSourceAllstars'
