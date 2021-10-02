@@ -6,9 +6,13 @@ import routes from './routes';
 const App = () => (
   <>
     <CssBaseline />
-    <Navbar />
-    {routes}
-    <Footer />
+    <div
+      style={{ display: 'flex', minHeight: '100vh', flexDirection: 'column' }}
+    >
+      <Navbar />
+      {routes}
+      <Footer />
+    </div>
   </>
 );
 

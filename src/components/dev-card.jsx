@@ -20,7 +20,7 @@ export default function DevCard({ profile }) {
 
       <CardContent>
         <Typography gutterBottom variant='h5' component='div'>
-          {profile.githubUsername ?? 'Default'}
+          {profile.githubUsername ?? 'Your name here'}
         </Typography>
         <Typography variant='body2' color='text.secondary'>
           {'Open Source Allstar'}
