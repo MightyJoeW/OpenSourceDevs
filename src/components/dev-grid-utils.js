@@ -7,10 +7,10 @@ export const profiles = [
     siteUrl: 'https://www.getscriptordietryin.com/',
   },
   {
-    githubUrl: 'https://github.com/',
-    githubUsername: null,
-    linkedinUrl: 'https://www.linkedin.com/',
-    photo: null,
+    githubUrl: 'https://github.com/MrsWarren',
+    githubUsername: 'MrsWarren',
+    linkedinUrl: 'https://www.linkedin.com/in/krystleawarren/', 
+    photo: 'https://avatars.githubusercontent.com/u/31019414?v=4',
     siteUrl: null,
   },
   {
