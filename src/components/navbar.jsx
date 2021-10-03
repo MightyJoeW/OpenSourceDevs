@@ -17,7 +17,7 @@ export default function Navbar() {
         <Toolbar>
           <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
             <Link to='/' style={navLinkStyle}>
-              Open Source Allstars
+              Open Source Devs
             </Link>
           </Typography>
           <Button color='inherit'>

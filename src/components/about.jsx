@@ -1,23 +1,18 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import hack from '../images/hack.png';
-import hackLong from '../images/hack-long.png';
+import GitHubAbout from '../images/github-about.png';
 
 const About = () => {
   return (
     <>
       <Container component='main' sx={{ mt: 8, mb: 2 }} maxWidth='sm'>
         <Typography variant='h1' component='h1'>
-          What is Open Source Allstars?
+          Open Source Devs
         </Typography>
         <Typography>
-          <img src={hackLong} alt='' />
-          <figcaption style={{ textAlign: 'center' }}>
-            [placeholder caption]
-          </figcaption>
           <p>
-            Open Source Allstars is a project that encourages developers to
+            Open Source Devs is a project that encourages developers to
             contribute to open-source projects. It can be confusing and even
             overwhelming trying to learn the contribution process on your own,
             so I created this project along with a step-by-step guide to guide
@@ -26,18 +21,18 @@ const About = () => {
           <p>
             Once your contribution is added, a card will be created included
             whichever pieces of data you include such as your GitHub photo, your
-            GitHub name, and links to your social media. Plus, this project is
-            `hacktoberfest-accepted`, so pull requests will count towards the
+            GitHub name, and links to your social media. Plus, this project has
+            the `Hacktoberfest` label, so pull requests will count towards the
             four required to receive a shirt from Digital Ocean’s Hacktoberfest
             challenge!
           </p>
           <figure>
             <img
-              src={hack}
-              alt='Open Source Allstars GitHub repo about section'
+              src={GitHubAbout}
+              alt='Open Source Devs GitHub repo about section'
             />
             <figcaption style={{ textAlign: 'center' }}>
-              hacktoberfest-accepted
+              Hacktoberfest label
             </figcaption>
           </figure>
           <p>
@@ -54,9 +49,9 @@ const About = () => {
           </p>
           <p>
             For a step-by-step walkthrough on contributing to the Open Source
-            Allstars project, follow the guide{' '}
+            Devs project, follow the guide{' '}
             <Link
-              href='https://www.getscriptordietryin.com/Contributing-to-Open-Source-Where-To-Begin-in-2021/'
+              href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -66,9 +61,9 @@ const About = () => {
           </p>
           <p>
             No need for a contribution guide? You can fork and clone the Open
-            Source Allstars project{' '}
+            Source Devs project{' '}
             <Link
-              href='https://github.com/MightyJoeW/OpenSourceAllstars'
+              href='https://github.com/MightyJoeW/OpenSourceDevs'
               target='_blank'
               rel='noopener noreferrer'
             >

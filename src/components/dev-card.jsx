@@ -23,7 +23,7 @@ export default function DevCard({ profile }) {
           {profile.githubUsername ?? 'Your name here'}
         </Typography>
         <Typography variant='body2' color='text.secondary'>
-          {'Open Source Allstar'}
+          {'Open Source Dev'}
         </Typography>
       </CardContent>
       <CardActions>

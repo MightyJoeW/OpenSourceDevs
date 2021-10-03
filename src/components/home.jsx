@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <header style={{ textAlign: 'center' }}>
-        <h1>Open Source Allstars</h1>
-        <h2> Legendary Developers in the Making</h2>
+        <h1>Open Source Devs</h1>
+        <h2> Software Developers Making a Difference</h2>
       </header>
       <Box sx={{ flexGrow: 1, margin: '3em' }}>
         <Grid

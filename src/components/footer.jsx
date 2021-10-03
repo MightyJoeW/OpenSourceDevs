@@ -6,11 +6,8 @@ function Copyright() {
   return (
     <Typography variant='body2' color='text.secondary'>
       {'Copyright © '}
-      <Link
-        color='inherit'
-        href='https://github.com/MightyJoeW/OpenSourceAllstars'
-      >
-        Open Source Allstars
+      <Link color='inherit' href='https://github.com/MightyJoeW/OpenSourceDevs'>
+        Open Source Devs
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -33,7 +30,7 @@ export default function Footer() {
         >
           Get started{' '}
           <Link
-            href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide-for-2021'
+            href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide'
             target='_blank'
             rel='noopener noreferrer'
           >
