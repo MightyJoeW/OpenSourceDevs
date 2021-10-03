@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a361941e-7964-45c5-92e7-10ef8015e5f0/deploy-status)](https://app.netlify.com/sites/opensourcedevs/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Open Source Devs](https://opensourcedevs.com/)
 
-## Available Scripts
+Open Source Devs is an open-source contribution project for newcomers.
 
-In the project directory, you can run:
+<br />
 
-### `yarn start`
+## How to Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Fork this project with the Fork button at the top of the project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- In your terminal, run the following commands (don't include the dollar sign):
 
-### `yarn test`
+  - `git clone https://github.com/MightyJoeW/OpenSourceDevs.git`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - `cd OpenSourceDevs`
 
-### `yarn build`
+  - `yarn or npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - `yarn start or npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  The project will run in your browser at `http://localhost:3000/`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Contribute
 
-### `yarn eject`
+- Create a new branch in the terminal with `git checkout -b 'name-of-branch'` i.e. git checkout mightyjoe
+- In src/components/dev-grid-utils.js, add your info in one of the objects (refer to the first object as an example). If there are no remaining default objects, simply clone the last object and add your details.
+- Stage your changes with `git add .`
+- Commit your changes with `git commit -m "feat: description of change"` i.e. git commit -m "feat: added info for mighty joe"
+- Push your changes with `git push origin name-of-branch`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- In GitHub, create a pull request by clicking on the Pull requests tab and clicking the green New pull request button (be sure to change the compare branch to your branch name to point to base: main).
+- Give your pull request a name, add a description, and click the gear icon next to Labels to add the `hacktoberfest` label if you want this to count towards the hacktoberfest challenge. Click Create pull request.
+- If your branch has conflicts, you can use the web editor or command line options under `This branch has conflicts that must be resolved` to resolve the conflicts.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Front-End technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- HTML
+- CSS
+- JavaScript
+- React
+- MUI
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Testing
 
-## Learn More
+- Jest
+- React Testing Library (in progress)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Sending Feedback
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Found an issue or have a request? [Submit an issue](https://github.com/MightyJoeW/OpenSourceDevs/issues).
