@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function DevCard({ profile }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, textAlign: 'center' }}>
       <CardMedia
         component='img'
         image={
@@ -20,10 +20,10 @@ export default function DevCard({ profile }) {
 
       <CardContent>
         <Typography gutterBottom variant='h5' component='div'>
-          {profile.githubUsername ?? 'Unknown'}
+          {profile.githubUsername ?? 'Your name here'}
         </Typography>
         <Typography variant='body2' color='text.secondary'>
-          {'Open Source Allstar'}
+          {'Open Source Dev'}
         </Typography>
       </CardContent>
       <CardActions>
