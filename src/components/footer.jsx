@@ -30,7 +30,7 @@ export default function Footer() {
         >
           Get started{' '}
           <Link
-            href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide'
+            href='https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide'
             target='_blank'
             rel='noopener noreferrer'
           >
