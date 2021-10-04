@@ -51,7 +51,7 @@ const About = () => {
             For a step-by-step walkthrough on contributing to the Open Source
             Devs project, follow the guide{' '}
             <Link
-              href='https://www.getscriptordietryin.com/contributing-to-open-source-made-simple-a-starter-guide'
+              href='https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide'
               target='_blank'
               rel='noopener noreferrer'
             >
