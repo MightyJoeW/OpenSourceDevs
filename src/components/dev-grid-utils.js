@@ -14,6 +14,13 @@ export const profiles = [
     siteUrl: null,
   },
   {
+    githubUrl: 'https://github.com/mariothedog',
+    githubUsername: 'Mariothedog',
+    linkedinUrl: null,
+    photo: 'https://avatars.githubusercontent.com/u/28541089?v=4',
+    siteUrl: null,
+  },
+  {
     githubUrl: 'https://github.com/nlewis84',
     githubUsername: 'nlewis84',
     linkedinUrl: 'https://www.linkedin.com/in/nlewis84',
