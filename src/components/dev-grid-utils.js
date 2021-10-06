@@ -44,24 +44,24 @@ export const profiles = [
     siteUrl: null,
   },
   {
-    githubUrl: 'https://github.com/',
-    githubUsername: null,
-    linkedinUrl: 'https://www.linkedin.com/',
-    photo: null,
-    siteUrl: null,
-  },
-  {
-    githubUrl: 'https://github.com/',
-    githubUsername: null,
-    linkedinUrl: 'https://www.linkedin.com/',
-    photo: null,
-    siteUrl: null,
-  },
-  {
     githubUrl: "https://github.com/agungjsp",
     githubUsername: "agungjsp",
     linkedinUrl: null,
     photo: "https://avatars.githubusercontent.com/u/30463526?v=4",
+    siteUrl: null,
+  },
+  {
+    githubUrl: 'https://github.com/',
+    githubUsername: null,
+    linkedinUrl: 'https://www.linkedin.com/',
+    photo: null,
+    siteUrl: null,
+  },
+  {
+    githubUrl: 'https://github.com/',
+    githubUsername: null,
+    linkedinUrl: 'https://www.linkedin.com/',
+    photo: null,
     siteUrl: null,
   },
 ];
