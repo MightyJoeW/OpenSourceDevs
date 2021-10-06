@@ -26,7 +26,7 @@ export default function DevCard({ profile }) {
           {'Open Source Dev'}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions style={{justifyContent: "space-evenly"}}>
         {profile.githubUrl && (
           <Button
             size='small'
