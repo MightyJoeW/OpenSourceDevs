@@ -15,9 +15,8 @@ function SearchBar({ devSelect }) {
   }
 
   const handleClick = (e) => {
-    let username = e.target.value;
-    console.log("you clicked: ", username)
-    // devSelect(username);
+    let username = e.target.dataset.username;
+    devSelect(username);
   }
 
   const searchRef = useRef(null);
@@ -42,7 +41,8 @@ function SearchBar({ devSelect }) {
             <div
               className="search-item"
               onClick={ handleClick }
-              key={ key }>
+              key={ key }
+              data-username={ profile.githubUsername }>
               { profile.githubUsername }
             </div>
           )
