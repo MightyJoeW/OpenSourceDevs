@@ -61,4 +61,12 @@ export const profiles = [{
         photo: null,
         siteUrl: null,
     },
+    {
+        githubUrl: 'https://github.com/JT007-ctrl',
+        githubUsername: 'JT007-ctrl',
+        linkedinUrl: 'https://www.linkedin.com/in/joshua-adenusi-4a0ab9198/',
+        photo: 'https://lh3.googleusercontent.com/a-/AOh14GgEBsFeHdcbzuG5skCiGwnjYVlU6lIx520csbjVlg=s288-p-rw-no',
+        siteUrl: null,
+    },
 ];
+
