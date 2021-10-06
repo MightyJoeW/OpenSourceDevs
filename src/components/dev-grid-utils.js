@@ -55,10 +55,10 @@ export const profiles = [{
         siteUrl: null,
     },
     {
-        githubUrl: 'https://github.com/',
-        githubUsername: null,
-        linkedinUrl: 'https://www.linkedin.com/',
+        githubUrl: 'https://github.com/riyakushwaha',
+        githubUsername: "riyakushwaha",
+        linkedinUrl: 'https://www.linkedin.com/in/riyakushwaha',
         photo: null,
-        siteUrl: null,
+        siteUrl: "https://www.twitter.com/riyakushwaha20",
     },
 ];

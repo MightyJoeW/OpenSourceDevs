@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 
 function Copyright() {
   return (
+    <>
+    <hr style={{margin: "10px 0", color: "#f0f0f0"}}/>
     <Typography variant='body2' color='text.secondary'>
       {'Copyright © '}
       <Link color='inherit' href='https://github.com/MightyJoeW/OpenSourceDevs'>
@@ -12,6 +14,7 @@ function Copyright() {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+    </>
   );
 }
 
