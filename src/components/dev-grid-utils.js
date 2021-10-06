@@ -57,7 +57,7 @@ export const profiles = [
     siteUrl: null,
   },
   {
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/agungjsp",
     githubUsername: "agungjsp",
     linkedinUrl: null,
     photo: "https://avatars.githubusercontent.com/u/30463526?v=4",
