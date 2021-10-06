@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from '@reach/router';
+import { Link, Redirect } from '@reach/router';
 import SearchBar from './searchbar';
 
 const navLinkStyle = {
@@ -12,6 +12,11 @@ const navLinkStyle = {
 };
 
 export default function Navbar() {
+
+  const devSelect = (e) => {
+    return <Redirect to='/users' style={navLinkStyle}/>
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='static' color='primary'>
@@ -22,7 +27,7 @@ export default function Navbar() {
             </Link>
           </Typography>
 
-          <SearchBar />
+          <SearchBar devSelect={ devSelect }/>
 
           <Button color='inherit'>
             <Link to='about' style={navLinkStyle}>
