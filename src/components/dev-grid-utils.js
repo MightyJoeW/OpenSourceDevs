@@ -55,13 +55,6 @@ export const profiles = [{
         siteUrl: null,
     },
     {
-        githubUrl: 'https://github.com/',
-        githubUsername: null,
-        linkedinUrl: 'https://www.linkedin.com/',
-        photo: null,
-        siteUrl: null,
-    },
-    {
         githubUrl: 'https://github.com/JT007-ctrl',
         githubUsername: 'JT007-ctrl',
         linkedinUrl: 'https://www.linkedin.com/in/joshua-adenusi-4a0ab9198/',
