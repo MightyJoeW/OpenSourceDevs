@@ -9,10 +9,11 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import GitHubAbout from '../images/github-about.png';
+import { trackingId } from '../keys';
 
 const About = () => {
   useEffect(() => {
-    ReactGA.initialize('UA-43084370-4');
+    ReactGA.initialize(trackingId);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
