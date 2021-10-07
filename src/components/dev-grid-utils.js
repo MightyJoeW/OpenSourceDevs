@@ -68,5 +68,12 @@ export const profiles = [{
         photo: 'https://lh3.googleusercontent.com/a-/AOh14GgEBsFeHdcbzuG5skCiGwnjYVlU6lIx520csbjVlg=s288-p-rw-no',
         siteUrl: null,
     },
+    {
+        githubUrl: 'https://github.com/aurora-0025',
+        githubUsername: 'aurora-0025',
+        linkedinUrl: 'null',
+        photo: 'https://avatars.githubusercontent.com/u/78461388?v=4',
+        siteUrl: null,
+    },
 ];
 
