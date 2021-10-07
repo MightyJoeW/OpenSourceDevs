@@ -65,6 +65,7 @@ function SearchBar() {
     <div>
       <form>
         <input
+          style={{textAlign: 'center'}}
           ref={ searchRef }
           onChange={ handleChange }
           onClick={ () => toggleSearch(true) }
