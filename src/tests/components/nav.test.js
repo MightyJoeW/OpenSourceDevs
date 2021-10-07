@@ -25,5 +25,4 @@ describe("Testing Header Component", () => {
 
     expect(getByText("About")).toBeInTheDocument();
   })
-
 })
