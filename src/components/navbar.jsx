@@ -41,11 +41,11 @@ export default function Navbar() {
             <SearchBar />
           </Button>
 
-          <Button color='inherit' style={innerItem}>
+          <Typography variant='h6' component='div' style={innerItem}>
             <Link to='about' style={navLinkStyle}>
               About
             </Link>
-          </Button>
+          </Typography>
         </Toolbar>
       </AppBar>
     </Box>
