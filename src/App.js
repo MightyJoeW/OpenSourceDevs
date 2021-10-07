@@ -7,6 +7,7 @@ const App = () => (
   <>
     <CssBaseline />
     <div
+      data-testid="main-wrapper"
       style={{ display: 'flex', minHeight: '100vh', flexDirection: 'column' }}
     >
       <Navbar />
