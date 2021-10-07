@@ -1,4 +1,5 @@
-export const profiles = [{
+export const profiles = [
+    {
         githubUrl: 'https://github.com/MightyJoeW',
         githubUsername: 'mightyjoew',
         linkedinUrl: 'https://www.linkedin.com/in/josephmwarren/',
@@ -55,17 +56,17 @@ export const profiles = [{
         siteUrl: null,
     },
     {
-        githubUrl: 'https://github.com/',
-        githubUsername: null,
-        linkedinUrl: 'https://www.linkedin.com/',
-        photo: null,
-        siteUrl: null,
-    },
-    {
         githubUrl: 'https://github.com/JT007-ctrl',
         githubUsername: 'JT007-ctrl',
         linkedinUrl: 'https://www.linkedin.com/in/joshua-adenusi-4a0ab9198/',
         photo: 'https://lh3.googleusercontent.com/a-/AOh14GgEBsFeHdcbzuG5skCiGwnjYVlU6lIx520csbjVlg=s288-p-rw-no',
+        siteUrl: null,
+    },
+    {
+        githubUrl: 'https://github.com/rriegel',
+        githubUsername: 'rriegel',
+        linkedinUrl: 'https://www.linkedin.com/in/ryanjriegel/',
+        photo: 'https://avatars.githubusercontent.com/u/75142382?v=4',
         siteUrl: null,
     },
 ];
