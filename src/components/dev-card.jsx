@@ -7,11 +7,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function DevCard({ profile }) {
+export default function DevCard({ profile, userView }) {
+
+
   return (
     <Card sx={{ maxWidth: 345, textAlign: 'center' }}>
 
-      <Link to={`users/${profile.githubUsername}`}>
+      <Link to={`/users/${profile.githubUsername}`}>
         <CardMedia
           component='img'
           image={

@@ -24,7 +24,7 @@ const User = ({ username }) => {
         <h1>{ username }</h1>
       </header>
       <Box sx={{ maxWidth: 345, margin: '0 auto' }}>
-        <DevCard profile={userData} />
+        <DevCard profile={ userData } userView={ true }/>
       </Box>
     </>
   );
