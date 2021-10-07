@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from '@reach/router';
 import { profiles } from "./dev-grid-utils.js";
 
 const searchResults = {
-  position: 'fixed',
+  position: 'absolute',
   justifyContent: 'center',
   backgroundColor: 'white',
   overflow: 'auto'
@@ -15,7 +16,7 @@ const searchItem = {
   cursor: 'pointer'
 };
 
-function SearchBar({ devSelect }) {
+function SearchBar() {
 
   let [searching, toggleSearch] = useState(false);
   var [filteredDevs, setFilter] = useState([]);
@@ -28,14 +29,8 @@ function SearchBar({ devSelect }) {
     }))
   }
 
-  const handleClick = (e) => {
-    let username = e.target.dataset.username;
-    devSelect(username);
-  }
-
   const searchRef = useRef(null);
 
-  // detect if click is in or out of searchbar
   useEffect(() => {
     function handler(e) {
       if (!searchRef.current?.contains(e.target)) {
@@ -54,10 +49,11 @@ function SearchBar({ devSelect }) {
           return (
             <div
               style={searchItem}
-              onClick={ handleClick }
               key={ key }
               data-username={ profile.githubUsername }>
-              { profile.githubUsername }
+              <Link to='users'>
+                { profile.githubUsername }
+              </Link>
             </div>
           )
         })
