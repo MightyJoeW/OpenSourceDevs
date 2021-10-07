@@ -7,7 +7,7 @@ import { profiles } from './dev-grid-utils';
 
 const Home = () => {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+    ReactGA.initialize('UA-43084370-4');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (

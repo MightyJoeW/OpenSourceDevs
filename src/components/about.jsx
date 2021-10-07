@@ -12,7 +12,7 @@ import GitHubAbout from '../images/github-about.png';
 
 const About = () => {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+    ReactGA.initialize('UA-43084370-4');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
