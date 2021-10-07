@@ -73,7 +73,7 @@ export const profiles = [{
         githubUsername: 'aurora-0025',
         linkedinUrl: 'null',
         photo: 'https://avatars.githubusercontent.com/u/78461388?v=4',
-        siteUrl: null,
+        siteUrl: 'https://dragonacademia.tk/',
     },
 ];
 
