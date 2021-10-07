@@ -1,11 +1,13 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 
 function Copyright() {
   return (
     <>
-    <hr style={{margin: "10px 0", color: "#f0f0f0"}}/>
+    <Divider sx={{ margin: '10px 0' }} />
+
     <Typography variant='body2' color='text.secondary'>
       {'Copyright © '}
       <Link color='inherit' href='https://github.com/MightyJoeW/OpenSourceDevs'>
