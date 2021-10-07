@@ -1,4 +1,3 @@
-
 export const profiles = [{
         githubUrl: 'https://github.com/MightyJoeW',
         githubUsername: 'mightyjoew',
