@@ -51,7 +51,7 @@ function SearchBar() {
               style={searchItem}
               key={ key }
               data-username={ profile.githubUsername }>
-              <Link to='users'>
+              <Link to={`users/${profile.githubUsername}`}>
                 { profile.githubUsername }
               </Link>
             </div>

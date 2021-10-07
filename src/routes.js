@@ -10,6 +10,6 @@ export default (
     <Home path='/' />
     <About path='/about' />
     <Error path='*' />
-    <User path='/users' />
+    <User path='/users/:username' />
   </Router>
 );
