@@ -1,6 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import { profiles } from "./dev-grid-utils.js";
 
+const searchResults = {
+  position: 'fixed',
+  justifyContent: 'center',
+  backgroundColor: 'white',
+  overflow: 'auto'
+};
+
+const searchItem = {
+  width: '9.5rem',
+  borderStyle: 'solid',
+  borderColor: 'whitesmoke',
+  cursor: 'pointer'
+};
+
 function SearchBar({ devSelect }) {
 
   let [searching, toggleSearch] = useState(false);
@@ -39,7 +53,7 @@ function SearchBar({ devSelect }) {
         filteredDevs.map((profile, key) => {
           return (
             <div
-              className="search-item"
+              style={searchItem}
               onClick={ handleClick }
               key={ key }
               data-username={ profile.githubUsername }>
@@ -52,7 +66,7 @@ function SearchBar({ devSelect }) {
   }
 
   return (
-    <div className="inner-item">
+    <div>
       <form>
         <input
           ref={ searchRef }
@@ -62,7 +76,7 @@ function SearchBar({ devSelect }) {
           placeholder="Search Contributors"
         />
       </form>
-      <div className="search-results">
+      <div style={searchResults}>
         { renderList() }
       </div>
     </div>
