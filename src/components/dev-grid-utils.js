@@ -1,5 +1,4 @@
-export const profiles = [
-    {
+export const profiles = [{
         githubUrl: 'https://github.com/MightyJoeW',
         githubUsername: 'mightyjoew',
         linkedinUrl: 'https://www.linkedin.com/in/josephmwarren/',
