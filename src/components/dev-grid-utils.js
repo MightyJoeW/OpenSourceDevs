@@ -75,5 +75,11 @@ export const profiles = [{
         photo: 'https://avatars.githubusercontent.com/u/78461388?v=4',
         siteUrl: 'https://dragonacademia.tk/',
     },
+    {
+        githubUrl: 'https://github.com/rriegel',
+        githubUsername: 'rriegel',
+        linkedinUrl: 'https://www.linkedin.com/in/ryanjriegel/',
+        photo: 'https://avatars.githubusercontent.com/u/75142382?v=4',
+    },
 ];
 
