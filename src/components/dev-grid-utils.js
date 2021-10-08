@@ -68,5 +68,12 @@ export const profiles = [{
         photo: 'https://lh3.googleusercontent.com/a-/AOh14GgEBsFeHdcbzuG5skCiGwnjYVlU6lIx520csbjVlg=s288-p-rw-no',
         siteUrl: null,
     },
+    {
+        githubUrl: 'https://github.com/rriegel',
+        githubUsername: 'rriegel',
+        linkedinUrl: 'https://www.linkedin.com/in/ryanjriegel/',
+        photo: 'https://avatars.githubusercontent.com/u/75142382?v=4',
+        siteUrl: null,
+    },
 ];
 
