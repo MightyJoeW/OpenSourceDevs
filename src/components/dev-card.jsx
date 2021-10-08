@@ -31,32 +31,30 @@ export default function DevCard({ profile }) {
           {'Open Source Dev'}
         </Typography>
       </CardContent>
-      <CardActions style={{justifyContent: "space-evenly"}}>
+      <CardActions style={{justifyContent: "center"}}>
         {profile.githubUrl && (
           <IconButton
-            href={profile.linkedinUrl}
+            href={profile.githubUrl}
             target='_blank'
-            rel='noopener noreferrer'
           >
-          <GitHub size='large'/>
+            <GitHub/>
           </IconButton>
         )}
         {profile.linkedinUrl && (
           <IconButton
             href={profile.linkedinUrl}
             target='_blank'
-            rel='noopener noreferrer'
+            touch={true}
           >
-          <LinkedIn size='large'/>
+            <LinkedIn/>
           </IconButton>
         )}
         {profile.siteUrl && (
           <IconButton
-            href={profile.linkedinUrl}
+            href={profile.siteUrl}
             target='_blank'
-            rel='noopener noreferrer'
           >
-          <Language size='large'/>
+            <Language/>
           </IconButton>
         )}
       </CardActions>

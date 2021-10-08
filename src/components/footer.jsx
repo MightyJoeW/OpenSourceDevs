@@ -6,8 +6,16 @@ import Divider from '@mui/material/Divider';
 function Copyright() {
   return (
     <>
+    <Divider sx={{ margin: '10px 0' }} />
+
+    <Typography variant='body2' color='text.secondary'>
+      {'Copyright © '}
+      <Link color='inherit' href='https://github.com/MightyJoeW/OpenSourceDevs'>
+        Open Source Devs
+      </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
+    </Typography>
     </>
   );
 }
