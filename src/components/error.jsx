@@ -8,7 +8,7 @@ const Error = () => {
         component="img"
         height="340"
         image="https://image.freepik.com/free-vector/404-error-page-found_24908-59517.jpg"
-        alt="green iguana"
+        alt="Cartoon with a speech bubble that reads 404 Error"
       />
     <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -21,7 +21,7 @@ const Error = () => {
       <CardActions>
       
       <Box maxWidth="sm" m="auto">
-        <Button size="small" href={'/'}>Take me to the home</Button>
+        <Button size="small" href={'/'}>Go to homepage</Button>
       </Box>
        
       </CardActions>
