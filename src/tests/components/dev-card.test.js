@@ -39,7 +39,7 @@ describe("Dev Card Component", () => {
 
     const linkElements = getAllByRole("link");
 
-    expect(linkElements.length).toBe(3);
+    expect(linkElements.length).toBe(4);
 
     linkElements.map(link => {
       expect(link.href).toBeDefined();
