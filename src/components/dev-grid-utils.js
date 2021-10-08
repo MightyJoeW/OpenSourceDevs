@@ -80,6 +80,7 @@ export const profiles = [{
         githubUsername: 'rriegel',
         linkedinUrl: 'https://www.linkedin.com/in/ryanjriegel/',
         photo: 'https://avatars.githubusercontent.com/u/75142382?v=4',
+        siteUrl: null,
     },
 ];
 
