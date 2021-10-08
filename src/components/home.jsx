@@ -4,10 +4,11 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import DevCard from './dev-card';
 import { profiles } from './dev-grid-utils';
+import { trackingId } from '../keys';
 
 const Home = () => {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
+    ReactGA.initialize(trackingId);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
