@@ -26,6 +26,7 @@ const innerItem = {
 };
 
 export default function Navbar() {
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       {/*!!WARN: Best practice would be to use a *theme* color, not hardcoded as below */}
