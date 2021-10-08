@@ -13,7 +13,8 @@ const navLinkStyle = {
 export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static' color='primary'>
+      {/*!!WARN: Best practice would be to use a *theme* color, not hardcoded as below */}
+      <AppBar position='static' color='primary' sx={{ bgcolor: '#000000' }}>
         <Toolbar>
           <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
             <Link to='/' style={navLinkStyle}>
