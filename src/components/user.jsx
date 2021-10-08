@@ -8,20 +8,19 @@ const User = ({ username }) => {
   const [userData, setUserData] = useState({});
 
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     profiles.forEach(profile => {
       if (profile.githubUsername === username) {
         setUserData(profile);
       }
-    })
+    });
   }, [username]);
 
   return (
     <>
       <header style={{ textAlign: 'center' }}>
-        <h1>{ username }</h1>
+        <h1>{username}</h1>
       </header>
       <Box sx={{ maxWidth: 345, margin: '0 auto' }}>
         <DevCard profile={userData} />
