@@ -23,7 +23,7 @@ const Error = () => {
           <Typography gutterBottom variant="h5" component="div">
             Oops! This page doesn't exist
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" component="div">
             The page you're trying to open may not be available or the link is
             incorrect.
           </Typography>
