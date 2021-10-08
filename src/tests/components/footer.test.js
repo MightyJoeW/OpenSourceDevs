@@ -22,6 +22,13 @@ describe("Footer Component", () => {
   })
 
   test("Clicking here Button", () => {
-    // Needs testing
+    const { getByRole} = render(<Footer />);
+
+    const linkElement = getByRole("link", {name:"here"});
+
+    expect(linkElement.href).toContain("https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide");
+
+    expect(linkElement.href).toInclude("contributing-to-open-source-starter-guide");
+
   })
 })
