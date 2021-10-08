@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from '@reach/router';
-import SearchBar from './searchbar2';
+import SearchBar from './searchbar';
 
 const navLinkStyle = {
   color: 'white',
