@@ -4,8 +4,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {GitHub, LinkedIn, Language} from '@mui/icons-material';
+import IconButton from '@mui/material/IconButton';
 
 export default function DevCard({ profile }) {
   return (
@@ -32,34 +33,31 @@ export default function DevCard({ profile }) {
       </CardContent>
       <CardActions style={{justifyContent: "space-evenly"}}>
         {profile.githubUrl && (
-          <Button
-            size='small'
-            href={profile.githubUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            GitHub
-          </Button>
-        )}
-        {profile.linkedinUrl && (
-          <Button
-            size='small'
+          <IconButton
             href={profile.linkedinUrl}
             target='_blank'
             rel='noopener noreferrer'
           >
-            LinkedIn
-          </Button>
+          <GitHub size='large'/>
+          </IconButton>
         )}
-        {profile.siteUrl && (
-          <Button
-            size='small'
-            href={profile.siteUrl}
+        {profile.linkedinUrl && (
+          <IconButton
+            href={profile.linkedinUrl}
             target='_blank'
             rel='noopener noreferrer'
           >
-            Site
-          </Button>
+          <LinkedIn size='large'/>
+          </IconButton>
+        )}
+        {profile.siteUrl && (
+          <IconButton
+            href={profile.linkedinUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+          <Language size='large'/>
+          </IconButton>
         )}
       </CardActions>
     </Card>
