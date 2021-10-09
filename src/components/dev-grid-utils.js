@@ -82,5 +82,12 @@ export const profiles = [{
         photo: 'https://avatars.githubusercontent.com/u/75142382?v=4',
         siteUrl: null,
     },
+    {
+        githubUrl: 'https://github.com/SairamNomula',
+        githubUsername: 'Sairam Nomula',
+        linkedinUrl: 'https://www.linkedin.com/in/sairam-nomula-8aa752192/',
+        photo: 'https://i.ibb.co/KLWqCP5/Me.png',
+        siteUrl: 'https://sairamnomula.netlify.app/',
+    }
 ];
 
