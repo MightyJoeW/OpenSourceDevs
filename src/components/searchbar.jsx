@@ -15,22 +15,20 @@ export default function SearchBar() {
   return (
     <Autocomplete
       disablePortal
-      id="combo-box-demo"
+      id='search-bar'
       options={usernames}
       renderOption={(option) => (
-        <React.Fragment>
+        <>
           <div>
-            <Link to={`/users/${option.key}`}>
-              { option.key }
-            </Link>
+            <Link to={`/users/${option.key}`}>{ option.key }</Link>
           </div>
-        </React.Fragment>
+        </>
       )}
       sx={{ backgroundColor: 'white', width: 300 }}
       renderInput={(params) =>
         <TextField
           {...params}
-          label="Search Contributors"
+          label="Search"
         />
       }
     />
