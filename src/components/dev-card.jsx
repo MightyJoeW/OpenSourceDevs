@@ -33,9 +33,9 @@ export default function DevCard({ profile }) {
       </CardContent>
       <CardActions style={{justifyContent: "center"}}>
         {profile.githubUrl && (
-          <IconButton
             href={profile.githubUrl}
             target='_blank'
+            rel='noopener noreferrer'
           >
             <GitHub/>
           </IconButton>
@@ -44,6 +44,7 @@ export default function DevCard({ profile }) {
           <IconButton
             href={profile.linkedinUrl}
             target='_blank'
+            rel='noopener noreferrer'
             touch={true}
           >
             <LinkedIn/>
@@ -53,6 +54,7 @@ export default function DevCard({ profile }) {
           <IconButton
             href={profile.siteUrl}
             target='_blank'
+            rel='noopener noreferrer'
           >
             <Language/>
           </IconButton>
