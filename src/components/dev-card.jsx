@@ -4,8 +4,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {GitHub, LinkedIn, Language} from '@mui/icons-material';
+import IconButton from '@mui/material/IconButton';
 
 const disabledLink = {
   pointerEvents: 'none'
@@ -41,36 +42,34 @@ export default function DevCard({ profile, userView }) {
           {'Open Source Dev'}
         </Typography>
       </CardContent>
-      <CardActions style={{justifyContent: "space-evenly"}}>
+      <CardActions style={{justifyContent: "center"}}>
         {profile.githubUrl && (
-          <Button
-            size='small'
+          <IconButton
             href={profile.githubUrl}
             target='_blank'
             rel='noopener noreferrer'
           >
-            GitHub
-          </Button>
+            <GitHub/>
+          </IconButton>
         )}
         {profile.linkedinUrl && (
-          <Button
-            size='small'
+          <IconButton
             href={profile.linkedinUrl}
             target='_blank'
             rel='noopener noreferrer'
+            touch={true}
           >
-            LinkedIn
-          </Button>
+            <LinkedIn/>
+          </IconButton>
         )}
         {profile.siteUrl && (
-          <Button
-            size='small'
+          <IconButton
             href={profile.siteUrl}
             target='_blank'
             rel='noopener noreferrer'
           >
-            Site
-          </Button>
+            <Language/>
+          </IconButton>
         )}
       </CardActions>
     </Card>
