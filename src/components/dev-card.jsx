@@ -33,6 +33,7 @@ export default function DevCard({ profile }) {
       </CardContent>
       <CardActions style={{justifyContent: "center"}}>
         {profile.githubUrl && (
+          <IconButton
             href={profile.githubUrl}
             target='_blank'
             rel='noopener noreferrer'
