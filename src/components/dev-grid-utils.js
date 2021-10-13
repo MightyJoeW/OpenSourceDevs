@@ -75,6 +75,7 @@ export const profiles = [{
         photo: 'https://avatars.githubusercontent.com/u/78461388?v=4',
         siteUrl: 'https://dragonacademia.tk/',
     },
+    
     {
         githubUrl: 'https://github.com/rriegel',
         githubUsername: 'rriegel',
@@ -88,6 +89,14 @@ export const profiles = [{
         linkedinUrl: 'https://www.linkedin.com/in/sairam-nomula-8aa752192/',
         photo: 'https://i.ibb.co/KLWqCP5/Me.png',
         siteUrl: 'https://sairamnomula.netlify.app/',
-    }
-];
+    },
+    {
+        githubUrl: 'https://github.com/IniobongUdom7',
+        githubUsername: 'IniobongUdom7',
+        linkedinUrl: 'https://www.linkedin.com/in/iniobong-udom-20171a150/',
+        photo: 'https://avatars.githubusercontent.com/u/63455287?s=400&u=11e2996943c6b8904f90d7494ef018db8ca8752c&v=4',
+        siteUrl: 'https://github.com/IniobongUdom7',
+    },
+    
+]
 
