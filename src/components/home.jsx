@@ -4,10 +4,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import DevCard from "./dev-card";
 import { profiles } from "./dev-grid-utils";
-
 import { Fragment } from "react";
-// import ScrollButton from './components/ScrollButton';
-import { Content, Heading } from "../components/Styles";
 import ScrollButton from "../components/ScrollButton";
 
 const Home = () => {
