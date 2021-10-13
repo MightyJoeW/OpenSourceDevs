@@ -18,6 +18,8 @@ Open Source Devs is an open-source contribution project for newcomers.
 
   - `yarn or npm install`
 
+    - Linux users, note that `yarn` comes from the Yarn Package Manager, not cmdtest. Please see the Yarn documentation for [how to install yarn via npm](https://yarnpkg.com/getting-started/install)
+
   - `yarn start or npm start`
 
   The project will run in your browser at `http://localhost:3000/`.
@@ -32,6 +34,7 @@ Open Source Devs is an open-source contribution project for newcomers.
 
 - In GitHub, create a pull request by clicking on the Pull requests tab and clicking the green New pull request button (be sure to change the compare branch to your branch name to point to base: main).
 - Give your pull request a name, add a description, and click the gear icon next to Labels to add the `hacktoberfest` label if you want this to count towards the hacktoberfest challenge. Click Create pull request.
+  - Note for users new to GitHub: Project access with Triage permission is required to add the label yourself. You will generally not have permissions to add the label yourself on your first Pull Request.
 - If your branch has conflicts, you can use the web editor or command line options under `This branch has conflicts that must be resolved` to resolve the conflicts.
 
 ### Front-End technologies
