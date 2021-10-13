@@ -1,74 +1,75 @@
-import * as React from 'react';
-import { Link, useLocation } from '@reach/router';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import {GitHub, LinkedIn, Language} from '@mui/icons-material';
-import IconButton from '@mui/material/IconButton';
+import * as React from "react";
+import { Link, useLocation } from "react-router-dom";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { GitHub, LinkedIn, Language } from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
 
 const disabledLink = {
-  pointerEvents: 'none'
+  pointerEvents: "none",
 };
 
 const enabledLink = {
-  pointerEvents: 'auto'
+  pointerEvents: "auto",
 };
 
 export default function DevCard({ profile, userView }) {
-
   const location = useLocation();
 
   return (
-    <Card sx={{ maxWidth: 345, textAlign: 'center' }}>
-
-      <Link to={`users/${profile.githubUsername}`} style={location.pathname === '/' ? enabledLink : disabledLink}>
+    <Card sx={{ maxWidth: 345, textAlign: "center" }}>
+      <Link
+        to={`users/${profile.githubUsername}`}
+        style={location.pathname === "/" ? enabledLink : disabledLink}
+      >
         <CardMedia
-          component='img'
+          component="img"
           image={
             profile.photo ??
-            'https://avatars.githubusercontent.com/u/9919?s=200&v=4'
+            "https://avatars.githubusercontent.com/u/9919?s=200&v=4"
           }
           alt={`${profile.github} GitHub headshot`}
         />
       </Link>
 
       <CardContent>
-        <Typography gutterBottom variant='h5' component='div'>
-          {profile.githubUsername ?? 'Your name here'}
+        <Typography gutterBottom variant="h5" component="div">
+          {profile.githubUsername ?? "Your name here"}
         </Typography>
-        <Typography variant='body2' color='text.secondary'>
-          {'Open Source Dev'}
+        <Typography variant="body2" color="text.secondary">
+          {"Open Source Dev"}
         </Typography>
       </CardContent>
-      <CardActions style={{justifyContent: "center"}}>
+      <CardActions style={{ justifyContent: "center" }}>
         {profile.githubUrl && (
           <IconButton
             href={profile.githubUrl}
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <GitHub/>
+            <GitHub />
           </IconButton>
         )}
         {profile.linkedinUrl && (
           <IconButton
             href={profile.linkedinUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            touch={true}
+            target="_blank"
+            rel="noopener noreferrer"
+            touch={"true"}
           >
-            <LinkedIn/>
+            <LinkedIn />
           </IconButton>
         )}
         {profile.siteUrl && (
           <IconButton
             href={profile.siteUrl}
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Language/>
+            <Language />
           </IconButton>
         )}
       </CardActions>
