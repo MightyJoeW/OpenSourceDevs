@@ -95,7 +95,7 @@ export const profiles = [{
         githubUsername: 'IniobongUdom7',
         linkedinUrl: 'https://www.linkedin.com/in/iniobong-udom-20171a150/',
         photo: 'https://avatars.githubusercontent.com/u/63455287?s=400&u=11e2996943c6b8904f90d7494ef018db8ca8752c&v=4',
-        siteUrl: 'https://github.com/IniobongUdom7',
+        siteUrl: null,
     },
     
 ]
