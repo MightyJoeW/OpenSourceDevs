@@ -37,9 +37,9 @@ export default function Navbar() {
             </Link>
           </Typography>
 
-          <Button style={innerItem}>
+          <Box style={innerItem}>
             <SearchBar />
-          </Button>
+          </Box>
 
           <Button color="inherit" style={innerItem}>
             <Link to="/about" style={navLinkStyle}>
