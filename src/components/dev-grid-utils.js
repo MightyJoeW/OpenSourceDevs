@@ -100,4 +100,11 @@ export const profiles = [
     photo: 'https://avatars.githubusercontent.com/u/63455287?v=4',
     siteUrl: null,
   },
+  {
+    githubUrl: 'https://github.com/fullburnen',
+    githubUsername: 'fullburnen',
+    linkedinUrl: null,
+    photo: 'https://avatars.githubusercontent.com/u/70560944',
+    siteUrl: null,
+  },
 ];
