@@ -79,4 +79,5 @@ export default function DevCard({ profile, userView }) {
 }
 DevCard.propTypes={
   profile: PropTypes.object.isRequired,
+  userView: PropTypes.object.isRequired,
 }
