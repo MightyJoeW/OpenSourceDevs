@@ -23,7 +23,7 @@ function Copyright() {
 export default function Footer() {
   return (
     <>
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component='footer'>
+      <Box sx={{ bgcolor: 'background.paper', p: 6, display: "flex", flexGrow: 1, flexDirection: "column", justifyContent: "end" }} component='footer'>
         <Typography variant='h6' align='center' gutterBottom>
           Want to contribute?
         </Typography>
