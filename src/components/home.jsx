@@ -4,8 +4,15 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import DevCard from "./dev-card";
 import { profiles } from "./dev-grid-utils";
-import { Fragment } from "react";
-import ScrollButton from "../components/ScrollButton";
+import "./styles.css";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 const Home = () => {
   useEffect(() => {
@@ -29,11 +36,10 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
-
-        <Fragment>
-          <ScrollButton />
-        </Fragment>
-      </Box>
+      </Box>{" "}
+      <button onClick={scrollToTop} id="scrollToTopBtn">
+        <ArrowUpwardIcon />
+      </button>
     </>
   );
 };

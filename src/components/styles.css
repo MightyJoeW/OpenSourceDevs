@@ -1,0 +1,13 @@
+#scrollToTopBtn {
+  background-color: white;
+  border: none;
+  border-radius: 90px;
+  border: 3px solid black;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 42px;
+  width: 48px;
+  align-items: center;
+  margin-left: 50%;
+}
