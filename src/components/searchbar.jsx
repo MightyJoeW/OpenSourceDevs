@@ -16,12 +16,12 @@ export default function SearchBar() {
       disablePortal
       id="search-bar"
       options={usernames}
-      renderOption={(option) => (
-        <>
+      renderOption={(option, index) => (
+        <div key={index}>
           <div>
             <Link to={`/users/${option.key}`}>{option.key}</Link>
           </div>
-        </>
+        </div>
       )}
       sx={{ backgroundColor: "white", width: 300 }}
       renderInput={(params) => <TextField {...params} label="Search" />}
