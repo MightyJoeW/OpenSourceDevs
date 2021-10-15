@@ -17,7 +17,7 @@ const enabledLink = {
   pointerEvents: "auto",
 };
 
-export default function DevCard({ profile, userView }) {
+export default function DevCard({ profile }) {
   const location = useLocation();
 
   return (
@@ -79,5 +79,4 @@ export default function DevCard({ profile, userView }) {
 }
 DevCard.propTypes={
   profile: PropTypes.object.isRequired,
-  userView: PropTypes.object.isRequired,
 }
