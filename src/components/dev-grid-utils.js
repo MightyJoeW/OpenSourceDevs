@@ -114,4 +114,11 @@ export const profiles = [
     photo: 'https://avatars.githubusercontent.com/u/14792447?v=4',
     siteUrl: 'https://angelamcosta.github.io/',
   },
+  {
+    githubUrl: 'https://github.com/devcer',
+    githubUsername: 'devcer',
+    linkedinUrl: 'https://www.linkedin.com/in/isantoshv/',
+    photo: 'https://avatars.githubusercontent.com/u/3799600?v=4',
+    siteUrl: 'https://devcer.github.io/',
+  },
 ];
