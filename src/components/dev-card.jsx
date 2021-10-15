@@ -16,7 +16,7 @@ const enabledLink = {
   pointerEvents: "auto",
 };
 
-export default function DevCard({ profile, userView }) {
+export default function DevCard({ profile }) {
   const location = useLocation();
 
   return (

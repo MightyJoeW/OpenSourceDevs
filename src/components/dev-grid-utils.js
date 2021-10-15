@@ -107,4 +107,11 @@ export const profiles = [
     photo: 'https://avatars.githubusercontent.com/u/70560944',
     siteUrl: null,
   },
+  {
+    githubUrl: 'https://github.com/angelamcosta',
+    githubUsername: 'angelamcosta',
+    linkedinUrl: 'https://www.linkedin.com/in/angelamcostalima/',
+    photo: 'https://avatars.githubusercontent.com/u/14792447?v=4',
+    siteUrl: 'https://angelamcosta.github.io/',
+  },
 ];
