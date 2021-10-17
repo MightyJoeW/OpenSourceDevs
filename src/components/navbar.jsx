@@ -9,20 +9,32 @@ import SearchBar from "./searchbar";
 const navLinkStyle = {
   color: "white",
   textDecoration: "none",
+  display:"flex",
+  flexGrow:"1",
+  width:"8rem",
+  overflow: "hidden",
+
+ 
 };
 
 const menuBarFlex = {
-  width: "100%",
+  width: "auto",
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
+   flexGrow: "3",
+
+
 };
 
 const innerItem = {
+  display: "flex",
   flexGrow: "1",
-  width: "10px",
-  lineHeight: "40px",
+  width: "8rem",
+  lineHeight: "30px",
+  margin:"0 0 0 10px",
   textAlign: "center",
+  radius:"10px"
 };
 
 export default function Navbar() {
