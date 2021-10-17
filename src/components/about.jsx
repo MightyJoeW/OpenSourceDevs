@@ -1,26 +1,31 @@
-import React, { useEffect } from "react";
-import ReactGA from "react-ga";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import GitHubAbout from "../images/github-about.png";
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import GitHubAbout from '../images/github-about.png';
+import { trackingId } from '../keys';
 
 const About = () => {
   useEffect(() => {
+    ReactGA.initialize(`UA-${trackingId}-04`, {
+      debug: false, // set to true to log pageview to console
+      // I also have the chrome extension with localhost/* whitelisted
+    });
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
     <>
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-        <Typography variant="h1" component="h1">
+      <Container component='main' sx={{ mt: 8, mb: 2 }} maxWidth='sm'>
+        <Typography variant='h1' component='h1'>
           Open Source Devs
         </Typography>
-        <Typography component="div">
+        <Typography component='div'>
           <p>
             Open Source Devs is a project that encourages developers to
             contribute to open-source projects. It can be confusing and even
@@ -37,21 +42,21 @@ const About = () => {
             challenge!
           </p>
 
-          <Card sx={{ maxWidth: 345, margin: "0 auto" }}>
+          <Card sx={{ maxWidth: 345, margin: '0 auto' }}>
             <CardMedia
-              component="img"
-              height="140"
+              component='img'
+              height='140'
               image={GitHubAbout}
-              alt="Open Source Devs GitHub repo about section"
+              alt='Open Source Devs GitHub repo about section'
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant='h5' component='div'>
                 Open Source Devs
               </Typography>
               <Typography
-                variant="body2"
-                color="text.secondary"
-                component="div"
+                variant='body2'
+                color='text.secondary'
+                component='div'
               >
                 Open Source Devs GitHub repo with hacktoberfest and
                 hacktoberfest-accepted labels
@@ -59,18 +64,18 @@ const About = () => {
             </CardContent>
             <CardActions>
               <Button
-                href="https://github.com/MightyJoeW/OpenSourceDevs"
-                target="_blank"
-                rel="noopener noreferrer"
-                size="small"
+                href='https://github.com/MightyJoeW/OpenSourceDevs'
+                target='_blank'
+                rel='noopener noreferrer'
+                size='small'
               >
                 Repo
               </Button>
               <Button
-                href="https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                size="small"
+                href='https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide'
+                target='_blank'
+                rel='noopener noreferrer'
+                size='small'
               >
                 Guide
               </Button>
@@ -78,11 +83,11 @@ const About = () => {
           </Card>
           <p>
             To learn more about the world of open source and how you can get
-            involved, check out my article{" "}
+            involved, check out my article{' '}
             <Link
-              href="https://www.getscriptordietryin.com/Contributing-to-Open-Source-Where-To-Begin-in-2021/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.getscriptordietryin.com/Contributing-to-Open-Source-Where-To-Begin-in-2021/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Contributing to Open Source: Where to Begin in 2021
             </Link>
@@ -90,11 +95,11 @@ const About = () => {
           </p>
           <p>
             For a step-by-step walkthrough on contributing to the Open Source
-            Devs project, follow the guide{" "}
+            Devs project, follow the guide{' '}
             <Link
-              href="https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               here
             </Link>
@@ -102,11 +107,11 @@ const About = () => {
           </p>
           <p>
             No need for a contribution guide? You can fork and clone the Open
-            Source Devs project{" "}
+            Source Devs project{' '}
             <Link
-              href="https://github.com/MightyJoeW/OpenSourceDevs"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/MightyJoeW/OpenSourceDevs'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               here
             </Link>
@@ -116,9 +121,9 @@ const About = () => {
           <p>Sincerely,</p>
           <p>
             <Link
-              href="https://github.com/MightyJoeW/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/MightyJoeW/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               MightyJoeW
             </Link>
