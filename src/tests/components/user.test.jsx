@@ -15,13 +15,11 @@ describe("User Component", () => {
   });
 
   test("Username renders", () => {
-    const {getByRole} = render(<User username="test"/>);
+    const { getByRole } = render(<User username="test" />);
 
-    const usernameElement = getByRole("heading", {name: /test/i});
+    const usernameElement = getByRole("heading", { name: /test/i });
 
     expect(usernameElement).toBeDefined();
     expect(usernameElement).toBeVisible();
-  })
-
-  
+  });
 });

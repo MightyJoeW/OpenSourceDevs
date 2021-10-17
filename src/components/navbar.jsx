@@ -9,12 +9,10 @@ import SearchBar from "./searchbar";
 const navLinkStyle = {
   color: "white",
   textDecoration: "none",
-  display:"flex",
-  flexGrow:"1",
-  width:"8rem",
+  display: "flex",
+  flexGrow: "1",
+  width: "8rem",
   overflow: "hidden",
-
- 
 };
 
 const menuBarFlex = {
@@ -22,9 +20,7 @@ const menuBarFlex = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
-   flexGrow: "3",
-
-
+  flexGrow: "3",
 };
 
 const innerItem = {
@@ -32,9 +28,9 @@ const innerItem = {
   flexGrow: "1",
   width: "8rem",
   lineHeight: "30px",
-  margin:"0 0 0 10px",
+  margin: "0 0 0 10px",
   textAlign: "center",
-  radius:"10px"
+  radius: "10px",
 };
 
 export default function Navbar() {

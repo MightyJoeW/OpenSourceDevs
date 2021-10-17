@@ -24,8 +24,8 @@ const Error = () => {
             Oops! This page doesn`&apos;`t exist
           </Typography>
           <Typography variant="body2" color="text.secondary" component="div">
-            The page you`&apos;`re trying to open may not be available or the link is
-            incorrect.
+            The page you`&apos;`re trying to open may not be available or the
+            link is incorrect.
           </Typography>
         </CardContent>
         <CardActions>
