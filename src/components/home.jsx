@@ -27,7 +27,7 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </Box>{' '}
     </>
   );
 };

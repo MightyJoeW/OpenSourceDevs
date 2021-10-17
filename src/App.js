@@ -5,6 +5,14 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 import routes from './routes';
 import { trackingId } from './keys';
+import FloatingActionButton from './components/shared/floating-action-button';
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +26,11 @@ const App = () => {
       >
         <Navbar />
         {routes}
+        <FloatingActionButton
+          color='default'
+          onClick={scrollToTop}
+          ariaLabel='scroll to top'
+        />
         <Footer />
       </div>
     </>
