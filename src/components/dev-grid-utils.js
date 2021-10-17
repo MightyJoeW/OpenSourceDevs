@@ -127,4 +127,11 @@ export const profiles = [
     photo: 'https://avatars.githubusercontent.com/u/57185551?v=4',
     siteUrl: 'https://bartek532.github.io/portfolio',
   },
+  {
+    githubUrl: "https://github.com/erikweibust",
+    githubUsername: "erikweibust",
+    linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
+    photo: "https://avatars.githubusercontent.com/u/566877?v=4",
+    siteUrl: "https://twitter.com/erikweibust"
+  }
 ];
