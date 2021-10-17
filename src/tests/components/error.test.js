@@ -15,19 +15,19 @@ describe("Error Component", () => {
   });
 
   test("Text with OOps", () => {
-    const {getByText} = render(<Error />);
+    const { getByText } = render(<Error />);
 
     const errorElement = getByText(/oops/i);
 
     expect(errorElement).toBeVisible();
-  })
+  });
 
   test("Check Homepage Link", () => {
     const { getByRole } = render(<Error />);
 
-    const linkElement = getByRole("link", {hidden: true});
+    const linkElement = getByRole("link", { hidden: true });
 
     expect(linkElement).toBeVisible();
     expect(linkElement.href).toBeDefined();
-  })
-})
+  });
+});

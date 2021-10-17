@@ -18,6 +18,8 @@ describe("Testing Home Component", () => {
     const { getByText } = render(<Home />);
 
     expect(getByText("Open Source Devs")).toBeInTheDocument();
-    expect(getByText("Software Developers Making a Difference")).toBeInTheDocument();
-  })
-})
+    expect(
+      getByText("Software Developers Making a Difference")
+    ).toBeInTheDocument();
+  });
+});

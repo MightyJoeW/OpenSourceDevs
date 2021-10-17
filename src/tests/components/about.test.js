@@ -21,20 +21,20 @@ describe("About Component", () => {
 
     expect(heading).toBeInTheDocument();
     expect(heading).toBeVisible();
-  })
+  });
 
   test("Testing Links", () => {
     const { getAllByRole } = render(<About />);
 
-    const links = getAllByRole('link');
+    const links = getAllByRole("link");
 
     expect(links.length).toBe(6);
 
-    links.map(link => {
+    links.map((link) => {
       expect(link.href).toBeDefined();
       expect(link).toBeVisible();
 
       return null;
-    })
-  })
-})
+    });
+  });
+});

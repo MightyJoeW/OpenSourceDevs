@@ -18,11 +18,11 @@ describe("Testing Header Component", () => {
     const { getByText } = render(<Header />);
 
     expect(getByText("Open Source Devs")).toBeInTheDocument();
-  })
+  });
 
   test("About Link Exists", () => {
     const { getByText } = render(<Header />);
 
     expect(getByText("About")).toBeInTheDocument();
-  })
-})
+  });
+});

@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { GitHub, LinkedIn, Language } from "@mui/icons-material";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import IconButton from "@mui/material/IconButton";
 
 const disabledLink = {
@@ -77,6 +77,6 @@ export default function DevCard({ profile }) {
     </Card>
   );
 }
-DevCard.propTypes={
+DevCard.propTypes = {
   profile: PropTypes.object.isRequired,
-}
+};

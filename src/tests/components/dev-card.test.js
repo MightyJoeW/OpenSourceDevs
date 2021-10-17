@@ -9,11 +9,11 @@ describe("Dev Card Component", () => {
   afterAll(() => cleanup());
 
   const profile = {
-    githubUrl: 'https://github.com/test-profile-that-does-not-exits',
-    githubUsername: 'test-non-existant-user',
-    linkedinUrl: 'https://www.linkedin.com/in/test-user/',
-    photo: 'https://avatars.githubusercontent.com/u/24866599',
-    siteUrl: 'https://www.test-site.com',
+    githubUrl: "https://github.com/test-profile-that-does-not-exits",
+    githubUsername: "test-non-existant-user",
+    linkedinUrl: "https://www.linkedin.com/in/test-user/",
+    photo: "https://avatars.githubusercontent.com/u/24866599",
+    siteUrl: "https://www.test-site.com",
   };
 
   test("DevCard Renders", () => {
@@ -32,21 +32,21 @@ describe("Dev Card Component", () => {
 
     expect(photoElement).toBeInTheDocument();
     expect(photoElement).toBeVisible();
-  })
+  });
 
   test("Dev Card Renders All Links", () => {
-    const {getAllByRole} = render(<DevCard profile={profile} />)
+    const { getAllByRole } = render(<DevCard profile={profile} />);
 
     const linkElements = getAllByRole("link");
 
     expect(linkElements.length).toBe(4);
 
-    linkElements.map(link => {
+    linkElements.map((link) => {
       expect(link.href).toBeDefined();
       expect(link.href).toBeString();
       expect(link).toBeVisible();
 
       return null;
-    })
-  })
-})
+    });
+  });
+});

@@ -15,20 +15,23 @@ describe("Footer Component", () => {
   });
 
   test("Title Text Exists", () => {
-    const { getByText} = render(<Footer />);
+    const { getByText } = render(<Footer />);
 
     expect(getByText("Open Source Devs")).toBeInTheDocument();
     expect(getByText("Want to contribute?")).toBeInTheDocument();
-  })
+  });
 
   test("Clicking here Button", () => {
-    const { getByRole} = render(<Footer />);
+    const { getByRole } = render(<Footer />);
 
-    const linkElement = getByRole("link", {name:"here"});
+    const linkElement = getByRole("link", { name: "here" });
 
-    expect(linkElement.href).toContain("https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide");
+    expect(linkElement.href).toContain(
+      "https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide"
+    );
 
-    expect(linkElement.href).toInclude("contributing-to-open-source-starter-guide");
-
-  })
-})
+    expect(linkElement.href).toInclude(
+      "contributing-to-open-source-starter-guide"
+    );
+  });
+});
