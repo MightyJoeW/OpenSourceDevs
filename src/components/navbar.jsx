@@ -27,7 +27,7 @@ const innerItem = {
 
 export default function Navbar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box>
       {/*!!WARN: Best practice would be to use a *theme* color, not hardcoded as below */}
       <AppBar position="static" color="primary" sx={{ bgcolor: "#000000" }}>
         <Toolbar style={menuBarFlex}>
