@@ -21,7 +21,7 @@ export default function DevCard({ profile }) {
   const location = useLocation();
 
   return (
-    <Card sx={{ maxWidth: 345, textAlign: "center" }}>
+    <Card sx={{ maxWidth: 345, textAlign: "center", marginBottom: "4px" }}>
       <Link
         to={`users/${profile.githubUsername}`}
         style={location.pathname === "/" ? enabledLink : disabledLink}
