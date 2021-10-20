@@ -7,13 +7,8 @@ import { profiles } from './dev-grid-utils';
 import { trackingId } from '../keys';
 
 const Home = () => {
-  useEffect(() => {
-    ReactGA.initialize(`UA-${trackingId}-04`, {
-      debug: false, // set to true to log pageview to console
-      // I also have the chrome extension with localhost/* whitelisted
-    });
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  const unusedVariable = 'unusedVariable';
+
   return (
     <>
       <header style={{ textAlign: 'center' }}>
