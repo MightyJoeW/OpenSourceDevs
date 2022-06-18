@@ -18,6 +18,7 @@ const enabledLink = {
 };
 
 export default function DevCard({ profile }) {
+  const [isValidImg, setIsValidImg] = React.useState(true)
   const location = useLocation();
 
   return (
@@ -28,9 +29,11 @@ export default function DevCard({ profile }) {
       >
         <CardMedia
           component="img"
+          onError={(e) => {
+            if (e) setIsValidImg(false);
+          }}
           image={
-            profile.photo ??
-            "https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+            profile.photo && isValidImg ? profile.photo : "https://avatars.githubusercontent.com/u/9919?s=200&v=4"
           }
           alt={`${profile.github} GitHub headshot`}
         />
