@@ -1,5 +1,13 @@
 export const profiles = [
   {
+    githubUrl: "https://github.com/ankushbhardwaj408",
+    githubUsername: "ankushbhardwaj408",
+    linkedinUrl: "https://www.linkedin.com/in/ankush-bhardwaj-9758721b9/",
+    photo:
+      "https://avatars.githubusercontent.com/u/93874580?s=400&u=a6f906f262afe559151ac9d00971ed7d1b150797&v=4",
+    siteUrl: "null",
+  },
+  {
     githubUrl: "https://github.com/MightyJoeW",
     githubUsername: "mightyjoew",
     linkedinUrl: "https://www.linkedin.com/in/josephmwarren/",
@@ -122,16 +130,16 @@ export const profiles = [
     siteUrl: "https://devcer.github.io/",
   },
   {
-    githubUrl: 'https://github.com/bartek532',
-    githubUsername: 'Bartek532',
-    photo: 'https://avatars.githubusercontent.com/u/57185551?v=4',
-    siteUrl: 'https://bartek532.github.io/portfolio',
+    githubUrl: "https://github.com/bartek532",
+    githubUsername: "Bartek532",
+    photo: "https://avatars.githubusercontent.com/u/57185551?v=4",
+    siteUrl: "https://bartek532.github.io/portfolio",
   },
   {
     githubUrl: "https://github.com/erikweibust",
     githubUsername: "erikweibust",
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
-    siteUrl: "https://twitter.com/erikweibust"
-  }
+    siteUrl: "https://twitter.com/erikweibust",
+  },
 ];
