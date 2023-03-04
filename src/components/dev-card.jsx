@@ -1,4 +1,4 @@
-// import * as React from "react";
+import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { GitHub, LinkedIn, Language } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import IconButton from "@mui/material/IconButton";
-import React, { useEffect } from 'react';
+import { useEffect } from "react/cjs/react.development"
 const disabledLink = {
   pointerEvents: "none",
 };
