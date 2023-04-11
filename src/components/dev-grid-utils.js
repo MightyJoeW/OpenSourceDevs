@@ -134,4 +134,11 @@ export const profiles = [
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
     siteUrl: "https://twitter.com/erikweibust"
   }
+  {
+    githubUrl: "https://github.com/pulse99r",
+    githubUsername: "Raymond Johnson",
+    linkedinUrl: "https://www.linkedin.com/in/raymond-johnson-99b371259/",
+    photo: "https://avatars.githubusercontent.com/u/97370716?v=4",
+    siteUrl: "https://www.facebook.com/pulse99"
+  }
 ];
