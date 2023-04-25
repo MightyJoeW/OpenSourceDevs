@@ -133,5 +133,12 @@ export const profiles = [
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
     siteUrl: "https://twitter.com/erikweibust"
-  }
+  },
+  {
+    githubUrl: "https://github.com/KyloRen04",
+    githubUsername: "KyloRen04",
+    linkedinUrl: "https://www.linkedin.com/in/akshat-kumar-75816b20b/",
+    photo: "https://avatars.githubusercontent.com/u/106383452?v=4",
+    siteUrl: "https://superlative-lily-568543.netlify.app/",
+  } 
 ];
