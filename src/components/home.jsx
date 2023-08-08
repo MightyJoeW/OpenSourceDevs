@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -18,7 +18,7 @@ const Home = (props) => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-    <><div style={{ backgroundColor: bg === "false" ? 'black' : 'white', color: bg === "false" ? 'white' : 'black' }}>
+    <div style={{ backgroundColor: bg === "false" ? 'black' : 'white', color: bg === "false" ? 'white' : 'black' }}>
       <header style={{ textAlign: 'center' }}>
         <h1>Open Source Devs</h1>
         <h2> Software Developers Making a Difference</h2>
@@ -37,7 +37,7 @@ const Home = (props) => {
         </Grid>
       </Box>
     </div>
-    </>
+
   );
 };
 

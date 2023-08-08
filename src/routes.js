@@ -9,12 +9,12 @@ const routes = (bg) => (
     <Route
       path="/"
       exact
-      render={(props) => <Home {...props} bg={bg} />}
+      render={(routeProps) => <Home {...routeProps} {...props} />}
     />
     <Route
       path="/about"
       exact
-      render={(props) => <About {...props} bg={bg} />}
+      render={(routeProps) => <About {...routeProps} {...props} />}
     />
 
 
