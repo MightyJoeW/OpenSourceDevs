@@ -2,13 +2,23 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
 
 function Copyright() {
   return (
     <>
+
+
       <Divider sx={{ margin: "10px 0" }} />
 
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="white" >
         {"Copyright © "}
         <Link
           color="inherit"
@@ -26,38 +36,40 @@ function Copyright() {
 export default function Footer() {
   return (
     <>
-      <Box
-        sx={{
-          bgcolor: "background.paper",
-          p: 6,
-          display: "flex",
-          flexGrow: 1,
-          flexDirection: "column",
-          justifyContent: "end",
-        }}
-        component="footer"
-      >
-        <Typography variant="h6" align="center" gutterBottom>
-          Want to contribute?
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
+      <div style={{ backgroundColor: 'black' }}>
+        <Box
+          sx={{
+            bgcolor: "black",
+            p: 6,
+            display: "flex",
+            flexGrow: 1,
+            flexDirection: "column",
+            justifyContent: "end",
+          }}
+          component="footer"
         >
-          Get started{" "}
-          <Link
-            href="https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Typography color="white" variant="h6" align="center" gutterBottom>
+            Want to contribute?
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            color="white"
+            component="p"
           >
-            here
-          </Link>
-          .
-        </Typography>
-        <Copyright />
-      </Box>
+            Get started{" "}
+            <Link
+              href="https://www.getscriptordietryin.com/contributing-to-open-source-starter-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+            </Link>
+            .
+          </Typography>
+          <Copyright />
+        </Box>
+      </div>
     </>
   );
 }

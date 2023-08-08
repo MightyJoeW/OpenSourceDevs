@@ -4,14 +4,20 @@ import About from "./components/about";
 import User from "./components/user";
 import Error from "./components/error";
 import { Switch } from "react-router";
-export default (
+const routes = (bg) => (
   <Switch>
-    <Route path="/" exact>
-      <Home />
-    </Route>
-    <Route path="/about" exact>
-      <About />
-    </Route>
+    <Route
+      path="/"
+      exact
+      render={(props) => <Home {...props} bg={bg} />}
+    />
+    <Route
+      path="/about"
+      exact
+      render={(props) => <About {...props} bg={bg} />}
+    />
+
+
     <Route path="/users/:username" exact>
       <User />
     </Route>
@@ -20,3 +26,5 @@ export default (
     </Route>
   </Switch>
 );
+
+export default routes;

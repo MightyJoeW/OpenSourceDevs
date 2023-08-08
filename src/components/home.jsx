@@ -6,7 +6,10 @@ import DevCard from './dev-card';
 import { profiles } from './dev-grid-utils';
 import { trackingId } from '../keys';
 
-const Home = () => {
+const Home = (props) => {
+
+  const { bg } = props;
+
   useEffect(() => {
     ReactGA.initialize(`UA-${trackingId}-04`, {
       debug: false, // set to true to log pageview to console
@@ -15,7 +18,7 @@ const Home = () => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-    <>
+    <><div style={{ backgroundColor: bg === "false" ? 'black' : 'white', color: bg === "false" ? 'white' : 'black' }}>
       <header style={{ textAlign: 'center' }}>
         <h1>Open Source Devs</h1>
         <h2> Software Developers Making a Difference</h2>
@@ -33,6 +36,7 @@ const Home = () => {
           ))}
         </Grid>
       </Box>
+    </div>
     </>
   );
 };
