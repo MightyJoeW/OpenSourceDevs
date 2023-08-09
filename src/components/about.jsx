@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -11,7 +11,8 @@ import Container from '@mui/material/Container';
 import GitHubAbout from '../images/github-about.png';
 import { trackingId } from '../keys';
 
-const About = () => {
+const About = (props) => {
+  const bg = props.bg;
   useEffect(() => {
     ReactGA.initialize(`UA-${trackingId}-04`, {
       debug: false, // set to true to log pageview to console
@@ -20,7 +21,8 @@ const About = () => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-    <>
+
+    <div style={{ backgroundColor: bg === "false" ? "black" : "white", color: bg === "false" ? "white" : "black" }} >
       <Container component='main' sx={{ mt: 8, mb: 2 }} maxWidth='sm'>
         <Typography variant='h1' component='h1'>
           Open Source Devs
@@ -130,7 +132,8 @@ const About = () => {
           </p>
         </Typography>
       </Container>
-    </>
+    </div>
+
   );
 };
 

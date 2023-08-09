@@ -3,12 +3,15 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
+
 function Copyright() {
   return (
     <>
+
+
       <Divider sx={{ margin: "10px 0" }} />
 
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="white" >
         {"Copyright © "}
         <Link
           color="inherit"
@@ -26,9 +29,10 @@ function Copyright() {
 export default function Footer() {
   return (
     <>
+
       <Box
         sx={{
-          bgcolor: "background.paper",
+          bgcolor: "black",
           p: 6,
           display: "flex",
           flexGrow: 1,
@@ -37,13 +41,13 @@ export default function Footer() {
         }}
         component="footer"
       >
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography color="white" variant="h6" align="center" gutterBottom>
           Want to contribute?
         </Typography>
         <Typography
           variant="subtitle1"
           align="center"
-          color="text.secondary"
+          color="white"
           component="p"
         >
           Get started{" "}
@@ -58,6 +62,7 @@ export default function Footer() {
         </Typography>
         <Copyright />
       </Box>
+
     </>
   );
 }

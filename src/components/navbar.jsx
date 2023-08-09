@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import SearchBar from "./searchbar";
 
+
 const navLinkStyle = {
   color: "white",
   textDecoration: "none",
@@ -33,7 +34,18 @@ const innerItem = {
   radius: "10px",
 };
 
-export default function Navbar() {
+const Btn = {
+  backgroundColor: "white",
+  color: "black",
+  fontsize: "20px",
+  padding: "10px 60px",
+  borderradius: "5px",
+  margin: "10px 0px",
+  cursor: "pointer",
+};
+
+
+export default function Navbar(props) {
   return (
     <Box>
       {/*!!WARN: Best practice would be to use a *theme* color, not hardcoded as below */}
@@ -54,6 +66,7 @@ export default function Navbar() {
               About
             </Link>
           </Button>
+          <button onClick={props.changeBg} style={Btn}>Dark Mode</button>
         </Toolbar>
       </AppBar>
     </Box>
