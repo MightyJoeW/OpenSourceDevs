@@ -133,5 +133,13 @@ export const profiles = [
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
     siteUrl: "https://twitter.com/erikweibust"
-  }
+  },
+  {
+   githubUrl: "https://github.com/SimardeepSingh-zsh", 
+    githubUsername: "SimardeepSingh-zsh",
+    linkedinUrl: "https://www.linkedin.com/in/https://www.linkedin.com/in/simardeep-singh-9b24b3217/",
+    photo: "https://avatars.githubusercontent.com/u/134756717?v=4"
+
+ 
+}
 ];
