@@ -24,8 +24,7 @@ export const profiles = [
     githubUrl: "https://github.com/nlewis84",
     githubUsername: "nlewis84",
     linkedinUrl: "https://www.linkedin.com/in/nlewis84",
-    photo:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQF6GRty7hLmdA/profile-displayphoto-shrink_400_400/0/1619664151128?e=1639008000&v=beta&t=E5bVRZmjH3EH2fAKBdA3YQ-FHBYb_WHGdYv5tNM6iRo",
+    photo: "https://avatars.githubusercontent.com/u/72768221?v=4",
     siteUrl: "https://nathanlewis.dev",
   },
   {
@@ -122,16 +121,23 @@ export const profiles = [
     siteUrl: "https://devcer.github.io/",
   },
   {
-    githubUrl: 'https://github.com/bartek532',
-    githubUsername: 'Bartek532',
-    photo: 'https://avatars.githubusercontent.com/u/57185551?v=4',
-    siteUrl: 'https://bartek532.github.io/portfolio',
+    githubUrl: "https://github.com/bartek532",
+    githubUsername: "Bartek532",
+    photo: "https://avatars.githubusercontent.com/u/57185551?v=4",
+    siteUrl: "https://bartek532.github.io/portfolio",
   },
   {
     githubUrl: "https://github.com/erikweibust",
     githubUsername: "erikweibust",
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
-    siteUrl: "https://twitter.com/erikweibust"
-  }
+    siteUrl: "https://twitter.com/erikweibust",
+  },
+  {
+    githubUrl: "https://github.com/0x1bitcrack3r",
+    githubUsername: "0x1bitcrack3r",
+    linkedinUrl: "https://www.linkedin.com/in/vishnu-ramineni-7a581383/",
+    photo: "https://avatars.githubusercontent.com/u/10860679?v=4",
+    siteUrl: "http://www.vishnuramineni.com/",
+  },
 ];
