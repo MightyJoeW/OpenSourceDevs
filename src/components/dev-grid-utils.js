@@ -24,8 +24,7 @@ export const profiles = [
     githubUrl: "https://github.com/nlewis84",
     githubUsername: "nlewis84",
     linkedinUrl: "https://www.linkedin.com/in/nlewis84",
-    photo:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQF6GRty7hLmdA/profile-displayphoto-shrink_400_400/0/1619664151128?e=1639008000&v=beta&t=E5bVRZmjH3EH2fAKBdA3YQ-FHBYb_WHGdYv5tNM6iRo",
+    photo: "https://avatars.githubusercontent.com/u/72768221?v=4",
     siteUrl: "https://nathanlewis.dev",
   },
   {
