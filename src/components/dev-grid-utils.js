@@ -122,16 +122,24 @@ export const profiles = [
     siteUrl: "https://devcer.github.io/",
   },
   {
-    githubUrl: 'https://github.com/bartek532',
-    githubUsername: 'Bartek532',
-    photo: 'https://avatars.githubusercontent.com/u/57185551?v=4',
-    siteUrl: 'https://bartek532.github.io/portfolio',
+    githubUrl: "https://github.com/bartek532",
+    githubUsername: "Bartek532",
+    photo: "https://avatars.githubusercontent.com/u/57185551?v=4",
+    siteUrl: "https://bartek532.github.io/portfolio",
   },
   {
     githubUrl: "https://github.com/erikweibust",
     githubUsername: "erikweibust",
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
-    siteUrl: "https://twitter.com/erikweibust"
-  }
+    siteUrl: "https://twitter.com/erikweibust",
+  },
+  {
+    githubUrl: "https://github.com/tartejbrothers",
+    githubUsername: "TartejBrothers",
+    linkedinUrl: "https://www.linkedin.com/in/tartej/",
+    photo:
+      "https://avatars.githubusercontent.com/u/112921727?s=400&u=b242a0ef8c091944ea5005e947a4a573f649cb7a&v=4",
+    siteUrl: "https://tarloic.web.app/",
+  },
 ];
