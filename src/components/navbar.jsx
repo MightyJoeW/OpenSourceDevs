@@ -30,7 +30,7 @@ const innerItem = {
   lineHeight: "30px",
   margin: "0 0 0 10px",
   textAlign: "center",
-  radius: "10px",
+  borderRadius: "10px", // Changed 'radius' to 'borderRadius'
 };
 
 export default function Navbar() {
@@ -45,8 +45,8 @@ export default function Navbar() {
             </Link>
           </Typography>
 
-          <Box style={innerItem}>
-            <SearchBar />
+          <Box style={{ ...innerItem, color: "black" }}>
+            <SearchBar placeholder="Search" borderRadius="10px" />
           </Box>
 
           <Button color="inherit" style={innerItem}>

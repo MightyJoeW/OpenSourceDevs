@@ -16,14 +16,42 @@ export default function SearchBar() {
       disablePortal
       id="search-bar"
       options={usernames}
-      renderOption={(option, index) => (
-        <div key={index}>
-          <div>
-            <Link to={`/users/${option.key}`}>{option.key}</Link>
-          </div>
-        </div>
-      )}
-      sx={{ backgroundColor: "white", width: 300 }}
+      renderOption={(props, option) => {
+        return (
+          <React.Fragment key={option}>
+            <Link
+              to={`/users/${option}`}
+              style={{
+                color: "black",
+                display: "block",
+                width: "90%",
+                margin: "auto",
+                fontSize: "16px",
+                fontWeight: "bold",
+                borderTopLeftRadius: "20px",
+                borderTopRightRadius: "20px",
+                borderBottomLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+                padding: "8px",
+                backgroundColor: "#d9d9d9",
+              }}
+            >
+              {option}
+            </Link>
+            <hr
+              style={{
+                margin: "5px 0",
+                color: "black",
+                borderRadius: "5px", // Adding border-radius to the hr element
+              }}
+            />
+          </React.Fragment>
+        );
+      }}
+      sx={{
+        backgroundColor: "white",
+        width: 300,
+      }}
       renderInput={(params) => <TextField {...params} label="Search" />}
     />
   );
