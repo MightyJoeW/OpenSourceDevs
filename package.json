@@ -57,5 +57,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/MightyJoeW/OpenSourceDevs.git",
+  "author": "aristo-13 <oseirichmond310@gmail.com>",
+  "license": "MIT"
 }
