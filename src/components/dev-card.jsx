@@ -8,6 +8,13 @@ import Typography from "@mui/material/Typography";
 import { GitHub, LinkedIn, Language } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import IconButton from "@mui/material/IconButton";
+/**
+ * Renders a developer profile card with hover animation.
+ *
+ * @param {Object} props
+ * @returns {JSX.Element}
+ */
+
 
 const disabledLink = {
   pointerEvents: "none",
@@ -21,7 +28,12 @@ export default function DevCard({ profile }) {
   const location = useLocation();
 
   return (
-    <Card sx={{ maxWidth: 345, textAlign: "center", marginBottom: "4px" }}>
+    <Card sx={{ maxWidth: 345, textAlign: "center", marginBottom: "4px" ,
+      '&:hover': {
+      transform: 'scale(1.05)',
+      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
+      cursor: 'pointer',
+    }}}>
       <Link
         to={`users/${profile.githubUsername}`}
         style={location.pathname === "/" ? enabledLink : disabledLink}
