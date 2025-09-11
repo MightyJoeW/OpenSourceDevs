@@ -122,16 +122,24 @@ export const profiles = [
     siteUrl: "https://devcer.github.io/",
   },
   {
-    githubUrl: 'https://github.com/bartek532',
-    githubUsername: 'Bartek532',
-    photo: 'https://avatars.githubusercontent.com/u/57185551?v=4',
-    siteUrl: 'https://bartek532.github.io/portfolio',
+    githubUrl: "https://github.com/bartek532",
+    githubUsername: "Bartek532",
+    photo: "https://avatars.githubusercontent.com/u/57185551?v=4",
+    siteUrl: "https://bartek532.github.io/portfolio",
   },
   {
     githubUrl: "https://github.com/erikweibust",
     githubUsername: "erikweibust",
     linkedinUrl: "https://www.linkedin.com/in/erikweibust/",
     photo: "https://avatars.githubusercontent.com/u/566877?v=4",
-    siteUrl: "https://twitter.com/erikweibust"
-  }
+    siteUrl: "https://twitter.com/erikweibust",
+  },
+  {
+    githubUrl: "https://github.com/modouljaiteh24",
+    githubUsername: "Lamin Jaiteh",
+    linkedinUrl: "https://www.linkedin.com/in/lamin-jaiteh-8103a923b/",
+    photo:
+      "https://avatars.githubusercontent.com/u/167339136?s=400&u=294586e72ff7da49cf3993a63c5a6947ae5ce6bd&v=4",
+    siteUrl: "https://twitter.com/laminjaiteh",
+  },
 ];
