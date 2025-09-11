@@ -137,7 +137,7 @@ export const profiles = [
   {
     githubUrl: "https://github.com/modouljaiteh24",
     githubUsername: "Lamin Jaiteh",
-    linkedinUrl: "https://www.linkedin.com/in/laminjaiteh/",
+    linkedinUrl: "https://www.linkedin.com/in/lamin-jaiteh-8103a923b/",
     photo:
       "https://avatars.githubusercontent.com/u/167339136?s=400&u=294586e72ff7da49cf3993a63c5a6947ae5ce6bd&v=4",
     siteUrl: "https://twitter.com/laminjaiteh",
