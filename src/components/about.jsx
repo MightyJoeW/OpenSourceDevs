@@ -21,8 +21,8 @@ const About = () => {
   }, []);
   return (
     <>
-      <Container component='main' sx={{ mt: 8, mb: 2 }} maxWidth='sm'>
-        <Typography variant='h1' component='h1'>
+      <Container component='main' sx={{ mt: 8, mb: 2,backgroundColor: 'var(--bg-color)',color: 'var(--text-color)' }} maxWidth='sm'>
+        <Typography  sx={{backgroundColor: 'var(--bg-color)',color: 'var(--text-color)' }}variant='h1' component='h1'>
           Open Source Devs
         </Typography>
         <Typography component='div'>
@@ -42,7 +42,7 @@ const About = () => {
             challenge!
           </p>
 
-          <Card sx={{ maxWidth: 345, margin: '0 auto' }}>
+          <Card sx={{ maxWidth: 345, margin: '0 auto', backgroundColor: 'var(--bg-color)',color: 'var(--text-color)' }}>
             <CardMedia
               component='img'
               height='140'

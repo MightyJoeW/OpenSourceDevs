@@ -20,7 +20,7 @@ const Home = () => {
         <h1>Open Source Devs</h1>
         <h2> Software Developers Making a Difference</h2>
       </header>
-      <Box sx={{ flexGrow: 1, margin: '3em' }}>
+      <Box sx={{ flexGrow: 1, margin: '3em',backgroundColor: 'var(--bg-color)',color: 'var(--text-color)'}}>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}

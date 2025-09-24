@@ -21,60 +21,69 @@ export default function DevCard({ profile }) {
   const location = useLocation();
 
   return (
-    <Card sx={{ maxWidth: 345, textAlign: "center", marginBottom: "4px" }}>
-      <Link
-        to={`users/${profile.githubUsername}`}
-        style={location.pathname === "/" ? enabledLink : disabledLink}
-      >
-        <CardMedia
-          component="img"
-          image={
-            profile.photo ??
-            "https://avatars.githubusercontent.com/u/9919?s=200&v=4"
-          }
-          alt={`${profile.github} GitHub headshot`}
-        />
-      </Link>
+      <Card sx={{
+    maxWidth: 345,
+    textAlign: "center",
+    marginBottom: "1rem",
+    backgroundColor: '#ffffff', // Force light card in all themes
+    color: '#000000',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+    borderRadius: '12px',
+  }}>
+        <Link
+          to={`users/${profile.githubUsername}`}
+          style={location.pathname === "/" ? enabledLink : disabledLink}
+        >
+          <CardMedia
+            component="img"
+            image={
+              profile.photo ??
+              "https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+            }
+            alt={`${profile.github} GitHub headshot`}
+          />
+        </Link>
 
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {profile.githubUsername ?? "Your name here"}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {"Open Source Dev"}
-        </Typography>
-      </CardContent>
-      <CardActions style={{ justifyContent: "center" }}>
-        {profile.githubUrl && (
-          <IconButton
-            href={profile.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHub />
-          </IconButton>
-        )}
-        {profile.linkedinUrl && (
-          <IconButton
-            href={profile.linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            touch={"true"}
-          >
-            <LinkedIn />
-          </IconButton>
-        )}
-        {profile.siteUrl && (
-          <IconButton
-            href={profile.siteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Language />
-          </IconButton>
-        )}
-      </CardActions>
-    </Card>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {profile.githubUsername ?? "Your name here"}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {"Open Source Dev"}
+          </Typography>
+        </CardContent>
+        <CardActions style={{ justifyContent: "center" }}>
+          {profile.githubUrl && (
+            <IconButton
+              href={profile.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub />
+            </IconButton>
+          )}
+          {profile.linkedinUrl && (
+            <IconButton
+              href={profile.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              touch={"true"}
+            >
+              <LinkedIn />
+            </IconButton>
+          )}
+          {profile.siteUrl && (
+            <IconButton
+              href={profile.siteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Language />
+            </IconButton>
+          )}
+        </CardActions>
+      </Card>
+  
   );
 }
 DevCard.propTypes = {

@@ -8,7 +8,7 @@ function Copyright() {
     <>
       <Divider sx={{ margin: "10px 0" }} />
 
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color='var(--text-color)'>
         {"Copyright © "}
         <Link
           color="inherit"
@@ -19,22 +19,24 @@ function Copyright() {
         {new Date().getFullYear()}
         {"."}
       </Typography>
-    </>
+    </>   
   );
 }
 
 export default function Footer() {
   return (
-    <>
+    
       <Box
         sx={{
-          bgcolor: "background.paper",
-          p: 6,
-          display: "flex",
-          flexGrow: 1,
-          flexDirection: "column",
-          justifyContent: "end",
-        }}
+        backgroundColor: 'var(--bg-color)',color: 'var(--text-color)',     
+        p: 6,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        minHeight: "200px",
+      }}
         component="footer"
       >
         <Typography variant="h6" align="center" gutterBottom>
@@ -43,7 +45,7 @@ export default function Footer() {
         <Typography
           variant="subtitle1"
           align="center"
-          color="text.secondary"
+          color='var(--text-color)'
           component="p"
         >
           Get started{" "}
@@ -54,10 +56,8 @@ export default function Footer() {
           >
             here
           </Link>
-          .
         </Typography>
         <Copyright />
       </Box>
-    </>
   );
 }

@@ -23,7 +23,8 @@ export default function SearchBar() {
           </div>
         </div>
       )}
-      sx={{ backgroundColor: "white", width: 300 }}
+      sx={{ backgroundColor: 'white',
+    color: 'var(--text-color)', width: 300 }}
       renderInput={(params) => <TextField {...params} label="Search" />}
     />
   );

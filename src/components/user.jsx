@@ -30,7 +30,7 @@ const User = () => {
       <header style={{ textAlign: 'center' }}>
         <h1>{username}</h1>
       </header>
-      <Box sx={{ maxWidth: 345, margin: '0 auto' }}>
+      <Box sx={{maxWidth: 345, margin: '0 auto' }}>
         <DevCard profile={userData} />
       </Box>
     </>
